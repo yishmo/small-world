@@ -13,7 +13,8 @@ response_json = get_all_monsters_for_small_world()
 def given_card_name_get_attrs(cardName):
     attr_dict = {}
     for card in response_json["data"]:
-        if cardName == card["name"]:
+        #ignore case
+        if cardName.lower() == card["name"].lower():
             attr_dict["atk"] = card["atk"]
             attr_dict["def"] = card["def"]
             attr_dict["attribute"] = card["attribute"]
