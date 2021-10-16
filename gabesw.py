@@ -17,7 +17,7 @@ def getScore(card, comparison):
 def run_gabes_code():
     deck = []
     print("Copy and paste your .ydk file main deck card numbers", 
-        "(all numbers after #main and before #side then press enter): ")
+        "(all numbers after #main and before #side then press enter TWICE): ")
     while True:
         user_input = input()
         if user_input == '':
