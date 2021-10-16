@@ -109,15 +109,15 @@ Your Choice: """
         )
 
         if mode == "1":
-            card1 = input("Enter the name of the monster card in your hand: ")
-            card2 = input("Enter the name of the monster card you want to search: ")
+            card1 = input("Enter the name of the monster card in your hand: ").strip()
+            card2 = input("Enter the name of the monster card you want to search: ").strip()
             print('--------------')
             if verify_card_legality(card1) and verify_card_legality(card2):
                 find_bridge(card1, card2)
         elif mode == "2":
             card = input(
                 "Enter the name of a monster card to find all Small World compatible cards: "
-            )
+            ).strip()
             print('--------------')
             if verify_card_legality(card):
                 find_small_world_compatible(card)
