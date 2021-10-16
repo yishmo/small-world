@@ -1,4 +1,3 @@
-import random
 import requests
 
 ALL_MAIN_DECK_MONSTER_MONSTER_TYPES = "Effect Monster,Flip Effect Monster,Flip Tuner Effect Monster,Gemini Monster,Normal Monster,Normal Tuner Monster,Pendulum Effect Monster,Pendulum Flip Effect Monster,Pendulum Normal Monster,Pendulum Tuner Effect Monster,Ritual Effect Monster,Ritual Monster,Spirit Monster,Toon Monster,Tuner Monster,Union Effect Monster"
@@ -56,8 +55,6 @@ QM_ATK = {
     "Tyranno Infinity",
 }
 
-def random_10_digit_int():
-    return random.randint(1000000000, 9999999999)
 
 def get_all_monsters_for_small_world():
     parameters = {}

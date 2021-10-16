@@ -15,13 +15,17 @@ def getScore(card, comparison):
     return score
 
 def run_gabes_code():
-    user_input = input(
-        "Copy and paste your .ydk file main deck card numbers (all numbers after #main and before #side then press enter: "
-    )
-    user_input.strip()
-    # length of every card id
-    n = 8
-    deck = [int(user_input[i : i + n]) for i in range(0, len(user_input), n)]
+    deck = []
+    print("Copy and paste your .ydk file main deck card numbers", 
+        "(all numbers after #main and before #side then press enter): ")
+    while True:
+        user_input = input()
+        if user_input == '':
+            break
+        elif len(user_input) != 8:
+            pass
+        else:
+            deck.append(int(user_input))
     # remove duplicates
     deck = set(list(deck))
 
