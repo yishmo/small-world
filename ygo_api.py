@@ -22,6 +22,7 @@ QM_ATK_AND_DEF = {
     "Helios Duo Megistus",
     "Helios Trice Megistus",
     "Holactie the Creator of Light",
+    "Leapress the Withered Flounder",
     "Ma'at",
     "Megarock Dragon",
     "Odd-Eyes Revolution Dragon",
@@ -46,6 +47,7 @@ QM_ATK = {
     "Gogogo Golem - Golden Form",
     "Kasha",
     "King of the Skull Servants",
+    "Mechabeast Dareton",
     "Montage Dragon",
     "Orichalcos Shunoros",
     "Rai-Jin",
@@ -54,6 +56,7 @@ QM_ATK = {
     "The Legendary Exodia Incarnate",
     "Tyranno Infinity",
 }
+QM_DEF = {'Lost Guardian'}
 
 
 def get_all_monsters_for_small_world():
@@ -72,5 +75,7 @@ def get_all_monsters_for_small_world():
             response_json['data'][i]['def'] = -i - 1
         if response_json['data'][i]['name'] in QM_ATK:
             response_json['data'][i]['atk'] = -i - 1
+        if response_json['data'][i]['name'] in QM_DEF:
+            response_json['data'][i]['def'] = -i - 1
 
     return response_json
