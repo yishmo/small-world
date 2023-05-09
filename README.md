@@ -23,7 +23,7 @@ Small World uses exactly 1 characteristic to bridge from a Starting Card to a Br
 
 This program is used to accomplish 3 things:
 - Given a Starting Card and a Target Card, returns a list of possible Bridge Cards to complete Small World. 
-- Return a list of cards that share exactly 1 characteristic.
+- Return a list of cards that share exactly 1 characteristic based on a given card.
 - Tells how well Small World would work in your deck.
 
 ## Credits
