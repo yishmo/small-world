@@ -17,7 +17,8 @@ Small World uses exactly 1 characteristic to bridge from a Starting Card to a Br
 
 **e.g.** Blue-Eyes White Dragon -> Effect Veiler -> Dark Magician
 
-In the above example, Blue-Eyes White Dragon and Effect Veiler only share exactly one characteristic in that they are both Light Attribute monsters. Then we check with Effect Veiler and Dark Magician, these cards also share exactly one characteristic in that they are both have the Spellcaster typing. So, we can bridge from Blue-Eyes 
+In the above example, Blue-Eyes White Dragon and Effect Veiler only share exactly one characteristic in that they are both Light Attribute monsters. Then we check with
+Effect Veiler and Dark Magician, these cards also share exactly one characteristic in that they both have the Spellcaster typing. So, we can bridge from Blue-Eyes 
 White Dragon to Dark Magician using Small World.
 
 **Note**: Monsters with undefined ATK or DEF indicated by ‘?’ cannot use that characteristic for bridging with Small World. The reason why is that currently ‘?’ ATK/DEF does not compare to anything (see related rulings).
