@@ -22,10 +22,14 @@ def run_gabes_code():
         user_input = input()
         if user_input == '':
             break
-        elif len(user_input) == 7:
-            #appending a 0 to front to work with EDOPRO YDK files
+        elif len(user_input) < 8:
+            #appending the needed amount of 0s to front to work with EDOPRO YDK files
             #that delete leading zeros....
-            user_input = '0' + user_input
+            guard=8-len(user_input)
+            counter=0
+            for counter in range(guard):
+                user_input = '0' + user_input
+
             deck.append(int(user_input))
         elif len(user_input) != 8:
             pass
